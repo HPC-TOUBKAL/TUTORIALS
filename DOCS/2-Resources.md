@@ -2,10 +2,6 @@
 
 <h1 align="center">Reservation commands</h1>
 
-## Toubkal
-
-<img src="data/Toubkal-Simlab.png" alt="Example Image" >
-
 ## Some definition
 
 - A node is one computer unit of an HPC cluster each containing memory and one or more CPUs. There are generally two classifications of nodes; login and compute. 
