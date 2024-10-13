@@ -1,1 +1,1 @@
-# TUTORIALS
+# toubkal-training
