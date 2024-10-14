@@ -1,7 +1,7 @@
 # Clone the github repo
 
 ```shell
-git clone https://github.com/imadki/toubkal-training.git
+git clone https://github.com/HPC-TOUBKAL/TUTORIALS.git
 ```
 
 # Windows
@@ -17,4 +17,4 @@ ssh -CY <login>@toubkal.hpc.um6p.ma
 
 # Ondemand platform
 
-https://ondemand.hpc.um6p.ma/
+- https://ondemand.hpc.um6p.ma/
