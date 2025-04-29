@@ -10,14 +10,12 @@
 
 - Core
 	- Slurm refers to cores as CPUs.
-	- there are 40/44 cores per node in Simlab, and 56/112/128 cores in Toubkal 
-	- up to 384GB memory per node in Simlab & up to 1.5TB for some nodes in Toubkal
+	- there are 56/112/128 cores in Toubkal 
+	- up to 192GB memory per node compute nodes & up to 1.5TB for some nodes
 
 - Task
 	- a task can be considered a command such as blast, bwa, script.py
  	- default: 1 cpu per task
- 
-<img src="data/tasks.png" alt="Task" >
 
 ## I. Reserve resources
 
@@ -195,7 +193,7 @@ gpu       511
 himem     114
 compute*  20682
 ```
-- Or In both Toubkal and Simlab add this command to `~/.bashrc` file, then tap `source ~/.bashrc`
+- Or add this command to `~/.bashrc` file, then tap `source ~/.bashrc`
 ```shell
 alias cpusinfo='sinfo -o "%n %G %C %t %P" --noheader | grep -v -e "resv" -e "drain" -e "maint" | awk '\''{split($3,cpus,"/"); partition[$5]+=cpus[2]} END {for (p in partition) print p, partition[p]}'\'' | colum -t'
 ```
