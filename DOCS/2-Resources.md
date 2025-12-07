@@ -340,7 +340,7 @@ sacctmgr show assoc where user=$USER format=qos%30,account%50,partition
 ```
 **Example 1**
 
-- Allocate resources in the gpu partition (run gpusinfo to check if there are available gpus):
+- Allocate resources in the gpu partition:
 ```shell
 srun --nodes=1 --partition=gpu --account=<GPU-ACCOUNT> --gres=gpu:2 --pty bash
 ```
